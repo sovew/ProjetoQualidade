@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjetoQualidade</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8582493664757085/5100984459</string>
+    <string name="Citation">Sua citação aqui</string>
+    <string name="title_activity_display_citation">DisplayCitationActivity</string>
+</resources>

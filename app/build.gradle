@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.eulersonrodrigues.projetoqualidade"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        pro {
+            applicationId = "com.eulersonrodrigues.projetoqualidade.pro"
+        }
+        free {
+            applicationId = "com.eulersonrodrigues.projetoqualidade.free"
+
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.google.android.gms:play-services-ads:7.8.0'
+    //compile files('externallibs/mylibtest.jar')
+    compile project(':mycitationlib')
+}
+
